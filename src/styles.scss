@@ -1,0 +1,60 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: auto; font-family: Roboto, "Helvetica Neue", sans-serif; display: flex; justify-content: center;}
+
+.button {
+  box-sizing: border-box;
+  font-family: inherit;
+  padding: 0.8rem 1rem;
+  border-radius: 1rem;
+  margin: 1rem;
+  font-size: 1rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.answer {
+  border: 1px solid green;
+  color: green;
+}
+.answer.active {
+  background-color: green;
+  color: white;
+}
+.answer:hover {
+  background-color: green;
+  color: white;
+}
+.submit {
+  border: 1px solid grey;
+  padding: 0.8rem 15rem;
+  color: grey;
+}
+
+.submit:hover {
+  background-color: grey;
+  color: white;
+}
+
+.error {
+  background-color: red;
+  color: white;
+}
+
+.green {
+  background-color: green;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.noHover {
+  pointer-events: none;
+}

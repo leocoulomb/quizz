@@ -1,0 +1,6 @@
+<div *ngFor="let question of questions">
+  <p>{{question.label | unescape }}</p>
+  <ng-container *ngFor="let answer of question.answers">
+    <button [ngClass]="getButtonClass(answer)" class="button answer" (click)="onClickAnswer(question, answer)"> {{answer.label | unescape}} </button>
+  </ng-container>
+</div>

@@ -1,0 +1,4 @@
+<h1>{{title}}</h1>
+<app-questions [questions]="questions" [isResult]="true"></app-questions>
+  <p [ngClass]="getCountValidAnswerClass()">You scored {{countValidAnswer}} out of {{questions.length}}</p>
+<button class="button submit"  [routerLink]="['/']" routerLinkActive="router-link-active">Create a new quizz</button>

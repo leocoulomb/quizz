@@ -1,0 +1,12 @@
+<form [formGroup]="quizzMakerForm" (ngSubmit)="generateQuizz()">
+  <select id="categorySelect" formControlName="categorySelect">
+    <option disabled value="-1">{{defaultCategorySelectLabel}}</option>
+    <option *ngFor="let category of categories" [value]="category.id">{{category.name | titlecase}}</option>
+  </select>
+  <select id="difficultySelect" formControlName="difficultySelect">
+    <option disabled value="">{{defaultDifficultySelectLabel}}</option>
+    <option *ngFor="let difficulty of difficulties" [value]="difficulty">{{difficulty | titlecase}}</option>
+  </select>
+
+  <button id="createBtn" type="submit" [disabled]="!quizzMakerForm.valid">Create</button>
+</form>

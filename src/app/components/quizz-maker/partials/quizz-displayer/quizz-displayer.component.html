@@ -1,0 +1,4 @@
+<app-questions [questions]="questions" [isResult]="false" (answerClicked)="selectAnswer($event)"></app-questions>
+<ng-container *ngIf="questions.length == questionsSelected.size">
+  <button class="button submit" (click)="submitQuizzAnswers()">Submit</button>
+</ng-container>
